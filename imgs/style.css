@@ -1,0 +1,59 @@
+/**{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:linear-gradient(white,rgb(255, 232, 232));
+}
+
+.carditem  .cardlist{
+    list-style: none;
+}
+.carditem .cardlink .cardlist {
+width: 100%;
+display: block;
+background-color: #fff;
+padding: 18px;
+border-radius: 12px;
+text-decoration: none;
+
+}
+.cardlink .cardlist .cardimg{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.cardlink .cardlist .brdge{
+color: #5372f0;
+padding: 8px 16px;
+font-size: 0.95rem;
+margin:16PX 0PX 18PX ;
+font-weight: 500;
+background-color: #ddd;
+width: fit-content;
+border-radius: 50px;
+}
+.cardlink .cardlist .cardtitle{
+    font-size: 1.1rem;
+    color:rgb(46, 44, 44);
+    font-weight:600 ;
+    
+}
+.cardlink .cardlist .card-button{
+    height: 35px;
+    width: 35px;color: #5372f0;
+    border-radius: 50%;
+    margin: 30px 0px 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #5372f0;
+    transform: rotate(-45deg);
+}

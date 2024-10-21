@@ -1,0 +1,37 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+
+</head>
+<body>
+    <div class="contener">
+        <div class="cardwrap">
+            <ul class="cardlist">
+                <li class="carditem">
+            <a href="" class="cardlink">
+        <img src="imgs/download (3).jpg" alt="" class="cardimg">
+          <p class="brdge">developer</p>
+        <h2 class="cardtitle">Lorem ipsum dolor sit amet.</h2> 
+        <button class="card-button" > <b> < </b>  </button>
+    </a></li>
+            
+        </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
+function prev() {
+        if (index > 0) {
+          index--;
+        } else {
+          index = images.length - 1;
+        }
+
+        slide.src = images[index];
+      }
+      setInterval(next,1000)

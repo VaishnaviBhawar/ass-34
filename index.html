@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: fit-content;
+        margin: 50px auto;
+        position: relative;
+      }
+
+      .slide {
+        height: 400px;
+        width: 600px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .icoaction {
+        height: 80px;
+        position: absolute;
+        top: 40%;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+
+      .icoprev {
+       left: 0;
+      }
+
+      .icoprev:hover {
+        transform: scale(0.8) translateX(-10px);
+      }
+
+      .iconext {
+       right: 0;
+      
+      }
+
+      .iconext:hover {
+        transform: scale(0.8) translateX(10px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="imgs/download (3).jpg" class="slide" id="slide" />
+
+      <img src="imgs/privious.png" class="icoaction icoprev" onclick="prev()" />
+      <img src="imgs/next.png" class="icoaction iconext" onclick="next()" />
+    </div>
+
+    <script>
+      const images = [
+        "imgs/download (4).jpg",
+        "imgs/download (5).jpg",
+        "imgs/images (2).jpg",
+        "imgs/download (6).jpg",
+       
+      ];
+
+      let index = 0;
+      const slide = document.getElementById("slide");
+
+      function next() {
+        if (index < images.length - 1) {
+          index++;
+        } else {
+          index = 0;
+        }
+
+        slide.src = images[index];
+      }
+
+      
+    </script>
+  </body>
+</html>
