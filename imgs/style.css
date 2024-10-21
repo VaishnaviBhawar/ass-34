@@ -57,3 +57,42 @@ border-radius: 50px;
     border: 2px solid #5372f0;
     transform: rotate(-45deg);
 }
+    */
+    .container {
+        width: fit-content;
+        margin: 50px auto;
+        position: relative;
+      }
+
+      .slide {
+        height: 400px;
+        width: 600px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .icoaction {
+        height: 80px;
+        position: absolute;
+        top: 40%;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+
+      .icoprev {
+       left: 0;
+      }
+
+      .icoprev:hover {
+        transform: scale(0.8) translateX(-10px);
+      }
+
+      .iconext {
+       right: 0;
+      
+      }
+
+      .iconext:hover {
+        transform: scale(0.8) translateX(10px);
+      }
+   
